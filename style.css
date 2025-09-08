@@ -1,0 +1,36 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grid container */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 kolonner */
+  gap: 20px; /* afstand mellem kolonner */
+  padding: 20px;
+}
+
+/* Kolonner styling */
+.grid_1-1 .column {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Responsivt: 2 kolonner på medium skærme */
+@media (max-width: 900px) {
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Responsivt: 1 kolonne på små skærme */
+@media (max-width: 600px) {
+  .grid_1-1 {
+    grid-template-columns: 1fr;
+  }
+}
